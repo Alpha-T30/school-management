@@ -12,7 +12,10 @@ const NavBar = () => {
           width={16}
           height={16}
         ></Image>
-        <input placeholder="Search" className="outline-none bg-none"></input>
+        <input
+          placeholder="Search"
+          className="outline-none bg-transparent"
+        ></input>
       </div>
       <div className="flex gap-6 items-center justify-end w-full">
         <div className="rounded-full flex items-center justify-center cursor-pointer">

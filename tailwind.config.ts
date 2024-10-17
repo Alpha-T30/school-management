@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        rolexSky: "#C3EBFA",
+        rolexSkyLight: "#EDF9FD",
+        rolexPurple: "#CFCEFF",
+        rolexPurpleLight: "#F1F0FF",
+        rolexYellow: "#FAE27C",
+        rolexYellowLight: "#FEFCE8",
+      },
     },
   },
   plugins: [],

@@ -118,10 +118,10 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <div className="mt-5 text-sm">
+    <div className=" text-sm">
       {menuItems.map((i) => (
         <div className="flex flex-col " key={i.title}>
-          <span className="hidden lg:block font-light text-gray-500">
+          <span className="hidden lg:block my-3 font-light text-gray-500">
             {i.title}
           </span>
           {i.items.map((i) => (
