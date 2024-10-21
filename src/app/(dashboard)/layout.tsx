@@ -11,7 +11,7 @@ export default function DashboardLayout({
   return (
     <div className="min-h-screen flex">
       {/* Sidebar */}
-      <div className="  w-[16%] md:w-[8%] lg:w-[20%] xl:w-[16%] sm:w-[8%] p-4 h-screen flex flex-col">
+      <div className="fixed  w-[16%] md:w-[8%] lg:w-[20%] xl:w-[16%] sm:w-[8%] p-4 h-screen flex flex-col">
         {/* Fixed Link at the top */}
         <div className="flex-shrink-0">
           <Link
@@ -30,7 +30,7 @@ export default function DashboardLayout({
       </div>
 
       {/* Main content area */}
-      <div className="w-[84%] md:w-[92%] lg:w-[80%] xl:w-[84%] sm:w-[92%] overflow-y-auto scrollbar-hide bg-[#f7f8fa] ">
+      <div className="ml-auto w-[84%] md:w-[92%] lg:w-[80%] xl:w-[84%] sm:w-[92%] overflow-y-auto scrollbar-hide bg-[#f7f8fa] ">
         <NavBar />
         {children}
       </div>

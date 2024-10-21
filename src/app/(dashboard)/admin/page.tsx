@@ -1,4 +1,8 @@
+import Announcement from "@/components/Announcement";
+import BarGraph from "@/components/BarGraph";
 import CompChart from "@/components/CompChart";
+import Events from "@/components/Events";
+import SimpleLineChart from "@/components/SimpleLineChart";
 import UserCard from "@/components/UserCard";
 import Image from "next/image";
 
@@ -19,15 +23,23 @@ const AdminPage = () => {
             <CompChart></CompChart>
           </div>
           {/* 2nd column graph */}
-          <div className="w-full lg:w-2/3  h-[450px]">2nd column graph</div>
+          <div className="w-full lg:w-2/3  h-[450px] rounded-lg bg-white p-5">
+            <BarGraph />
+          </div>
         </div>
-        <div>another graph </div>
+        <div className="bg-white p-4 rounded-xl h-[450px] w-full">
+          <SimpleLineChart />
+        </div>
       </div>
       {/* right */}
-      <div className="w-full lg:w-1/3">
-        <div>calendar </div>
-        <div>events </div>
-        <div>Announcement</div>
+      <div className="flex flex-col gap-10 w-full lg:w-1/3 ">
+        <div className="bg-white rounded-xl p-4 w-full">
+          <Events></Events>
+        </div>
+
+        <div className="bg-white rounded-xl w-full p-4s">
+          <Announcement></Announcement>
+        </div>
       </div>
     </div>
   );

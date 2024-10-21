@@ -63,16 +63,16 @@ const CompChart = () => {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         ></Image>
       </div>
-      <div className="flex gap-16 ">
-        <div className="flex flex-col  ">
+      <div className="flex items-center justify-center gap-10 ">
+        <div className="flex flex-col items-center justify-center ">
           <div className="h-7 w-7 rounded-full bg-rolexSky"></div>
           <h1 className="text-xl font-bold">1200</h1>
-          <h2 className="text-slate-400">Boys (60%) </h2>
+          <h2 className="text-slate-400 text-center">Boys (60%) </h2>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col items-center justify-center ">
           <div className="h-7 w-7 rounded-full bg-rolexYellow"></div>
           <h1 className="text-xl font-bold">900</h1>
-          <h2 className="text-slate-400">Girls (40%) </h2>
+          <h2 className="text-slate-400 text-center">Girls (40%) </h2>
         </div>
       </div>
     </div>
